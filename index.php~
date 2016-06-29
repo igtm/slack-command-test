@@ -9,4 +9,4 @@ $result = array("response_type" => "in_channel",
 		]
 );
 
-echo JSON.parse($result);
+echo json_encode($result);

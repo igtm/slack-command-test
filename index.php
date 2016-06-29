@@ -1,7 +1,7 @@
 <?php 
 
 $get = $_GET;
-
+try{
 $result = array("response_type" => "in_channel",
     		"text"          => "成功.",
     		"attachments"   => [
@@ -10,3 +10,6 @@ $result = array("response_type" => "in_channel",
 );
 
 echo json_encode($result);
+}catch(Exception $e){
+echo $e;
+}
