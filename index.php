@@ -13,7 +13,7 @@ $command      = $_GET["command"];
 $text         = $_GET["text"];
 $response_url = $_GET["response_url"];
 
-if ($TOKEN !== $token) throw new Exception();
+if (TOKEN != $token) throw new Exception();
 
 
 $result = array("response_type" => "in_channel",
