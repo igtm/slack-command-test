@@ -9,7 +9,7 @@ $result = array("response_type" => "in_channel",
 				]
 );
 
-echo json_encode($result);
+echo json_encode($get);
 }catch(Exception $e){
 echo $e;
 }
