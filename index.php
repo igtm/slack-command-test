@@ -13,7 +13,7 @@ $command      = $_GET["command"];
 $text         = $_GET["text"];
 $response_url = $_GET["response_url"];
 
-if (TOKEN != $token) throw new Exception();
+// if (TOKEN != $token) throw new Exception();
 
 
 $result = array("response_type" => "in_channel",
@@ -24,4 +24,4 @@ $result = array("response_type" => "in_channel",
 );
 
 header('Content-Type: application/x-www-form-urlencoded');
-echo json_encode($result);
+echo json_encode($_GET);
